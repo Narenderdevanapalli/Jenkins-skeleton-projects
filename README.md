@@ -36,7 +36,8 @@ EC2 > Instances > Click on
 In the bottom tabs -> Click on Security
 Security groups
 Add inbound traffic rules as shown in the image (you can just allow TCP 8080 as well, in my case, I allowed All traffic).
-Screenshot 2023-02-01 at 12 42 01 PM
+<img width="1598" height="284" alt="image" src="https://github.com/user-attachments/assets/31d52e81-76d4-42c0-a150-489a9a1432c5" />
+
 
 Login to Jenkins using the below URL:
 http://:8080 [You can get the ec2-instance-public-ip-address from your AWS EC2 console page]
@@ -45,22 +46,27 @@ Note: If you are not interested in allowing All Traffic to your EC2 instance 1. 
 
 After you login to Jenkins, - Run the command to copy the Jenkins Admin Password - sudo cat /var/lib/jenkins/secrets/initialAdminPassword - Enter the Administrator password
 
-Screenshot 2023-02-01 at 10 56 25 AM
+<img width="888" height="378" alt="image" src="https://github.com/user-attachments/assets/af4dee5c-53b4-4030-92ca-7d1776eb642b" />
+
 
 Click on Install suggested plugins
-Screenshot 2023-02-01 at 10 58 40 AM
+S<img width="895" height="445" alt="image" src="https://github.com/user-attachments/assets/a58e3266-5750-45aa-a4e3-a183f7ef6ffb" />
+
 
 Wait for the Jenkins to Install suggested plugins
 
-Screenshot 2023-02-01 at 10 59 31 AM
+<img width="891" height="463" alt="image" src="https://github.com/user-attachments/assets/390ff81f-0a5a-4544-b9c4-92b7335f45ad" />
+
 
 Create First Admin User or Skip the step [If you want to use this Jenkins instance for future use-cases as well, better to create admin user]
 
-Screenshot 2023-02-01 at 11 02 09 AM
+<img width="882" height="520" alt="image" src="https://github.com/user-attachments/assets/4528522a-61b2-4e9c-81f9-e581edf2897a" />
+
 
 Jenkins Installation is Successful. You can now starting using the Jenkins
 
-Screenshot 2023-02-01 at 11 14 13 AM
+<img width="878" height="487" alt="image" src="https://github.com/user-attachments/assets/b3fe28ab-c4a9-421e-97dc-5995cbe693c8" />
+
 
 Install the Docker Pipeline plugin in Jenkins:
 Log in to Jenkins.
@@ -68,7 +74,8 @@ Go to Manage Jenkins > Manage Plugins.
 In the Available tab, search for "Docker Pipeline".
 Select the plugin and click the Install button.
 Restart Jenkins after the plugin is installed.
-Screenshot 2023-02-01 at 12 17 02 PM
+<img width="868" height="361" alt="image" src="https://github.com/user-attachments/assets/50dbc89f-7b05-4113-8e1e-e7254d893267" />
+
 
 Wait for the Jenkins to be restarted.
 
